@@ -6,8 +6,17 @@
  *
  * Desafio: aceite letras maiúsculas e minúsculas.
  */
+import java.util.Scanner;
 public class Ex03_2 {
     public static void main(String[] args) {
-        // escreva sua solução aqui
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Qual a senha:");
+        String senha = scanner.nextLine();
+        if(senha.equalsIgnoreCase("dragao")){
+            System.out.println("A senha está correta");
+        }
+        else {
+            System.out.println("Senha incorreta");
+        }
     }
 }

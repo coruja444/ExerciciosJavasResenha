@@ -7,8 +7,17 @@
  * Desafio: depois, pergunte se o usuário deseja entrar e apresente um
  * final diferente conforme a resposta.
  */
+import java.util.Scanner;
 public class Ex03_12 {
     public static void main(String[] args) {
-        // escreva sua solução aqui
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Informe uma palavra:");
+   String palavra = scanner.nextLine();
+   while (!palavra.equalsIgnoreCase("abracadabra")){
+       System.out.println("A porta não abriu tente denovo:");
+   }
+   if (palavra.equalsIgnoreCase("Abracadabra")){
+       System.out.println("A porta abriu!!!");
+   }
     }
 }
